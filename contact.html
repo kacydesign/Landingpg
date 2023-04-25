@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav-inverse"> 
+    <div class="container" id="containerNav">
+      <div class="navbar-header" >
+        <a href="index.html" class="navbar-brand"><img src="images/LogoMakr-6Lq1Da.png" alt="" id="logo" ></a>
+        <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse" id="nav-inverse2">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav" id="listbar">
+          <li><a href="index.html" >Portfolio</a></li>
+          <li><a href="#">Our Collections</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" id="contact-section1">
+    <div  class="contact-jumbotron">
+      <h2>Join our VIP group and get 20% off</h2>
+      <button type="button" class="btn" data-target="#myInquiry" data-toggle="modal" id="btn">Join Now</button>
+    </div>
+    <div class="modal" id="myInquiry" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" id="modal-dialog">
+        <div class="modal-content" id="popup">
+          <div class="modal-header" id="popup-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 id="myModalLabel">20% OFF Offer</h4>
+          </div>
+          <div class="modal-body" id="popup-body">
+            <form>
+              <div class="form-group" id="input">
+                <label for="mail">Your Email</label>
+                <input type="email" name="mail" id="mail" placeholder="Enter Your Email" class="form-control">
+                <button id="popup-btn" class="form-control">Join</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  <div class="container" id="contact-section2">
+    <div>
+      <h1>GET IN TOUCH WITH US</h1>
+    </div>
+    <div class="rows">
+      <div class="col-sm-6">
+        <form >
+          <div class="form-group" id="form-grp">
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" placeholder="Enter your name" class="form-control">
+          </div>
+          <div class="form-group" id="form-grp">
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" placeholder="Enter your email" class="form-control">
+          </div>
+          <div class="form-group" id="form-grp">
+            <!-- <label for="subject">Subject:</label> -->
+            <input type="text" id="subject"  class="form-control" placeholder="Enter subject">
+          </div>
+          <!-- <label for="comments">Comments:</label> -->
+          <textarea  id="comments" rows="5" class="form-control" placeholder="Let us know how we can help..." ></textarea>
+          <button type="submit"  id="contact-button">Send</button>
+        </form>
+      </div>
+      <div class="col-sm-6" id="address-bar">
+        <div>
+          <p><span class="glyphicon glyphicon-home" id="icons"></span>Oviobor, 67392A. UGHELLI ROAD, OZORO.<p>
+          <p><span class="glyphicon glyphicon-phone" id="icons"></span>+23470 6739 1746... Mon to Fri 9am to 6pm</p>
+          <p></h5><span class="glyphicon glyphicon-envelope" id="icons"></span>ugboborkacy@gmail.com</p>
+          <p>Send us your query anytime!</p>
+        <div>
+        
+      </div>
+    </div>
+
+  </div>
+  <!-- <div class="footer">
+    <div class="container-fluid">
+      <p>&copy; Create with Karcey.</p>
+    </div>
+  </div> -->
+
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+  <script src="index.js"></script>
+</body>
+</html>

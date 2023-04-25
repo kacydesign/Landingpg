@@ -1,0 +1,537 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-attachment: fixed;
+}
+
+/* styling the first section (Jumbotron) */
+
+#first-set{
+    margin: 0 30px 30px 30px; 
+    box-shadow: 4px 4px 8px rgb(88, 86, 86);
+}
+
+#jumbotron{
+    background: url("https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_960_720.jpg");
+    background-size: cover;
+    height: 80vh; 
+    text-align: center; 
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+#containerNav{
+    margin-left: 0;
+    position: relative;
+}
+
+
+
+#title{
+    padding: 30px 10px;    
+}
+
+#title p{
+   color: rgb(245, 239, 243); 
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#title h1{
+    font-family: cursive;
+    font-size: 70px;
+    font-weight: 900;
+    color: transparent;
+    /* -webkit-text-stroke: 1px rgb(255,0,217); */
+    background-image: linear-gradient(rgb(255,0,217), rgb(255,0,217));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -780px 0;
+    /* animation: backcolor 5s linear infinite; */
+    animation: backcolor 6s linear infinite alternate;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+/* styling the navigation bar */
+#nav-inverse{
+    background: linear-gradient(to right, rgb(93,47,60), rgb(91,70,77), rgb(18,27,29));
+    margin: 0;
+    border-color: transparent;
+    box-shadow: 0 4px 4px rgba(19, 9, 12, 0.3);     
+}
+
+#nav-inverse2{
+    border-color:  rgb(255,0,217);
+}
+
+#nav-inverse2 .icon-bar{
+   border: 1px solid rgb(255,0,217); 
+}
+
+
+#logo{
+    height: 50px; 
+    margin-top: -5px;
+    position: absolute;
+    left: 20;
+       /* margin-right: 60px; */
+} 
+
+#navbarCollapse{
+    border-top: 1px solid transparent;    
+}
+
+#listbar{
+    margin-left: 20px;
+}
+
+#listbar li{
+    padding-left: 90px;
+    margin-right: 35px;
+    padding: 10px 0;
+    margin-left: 50px;
+}
+
+#listbar a{
+    color: rgb(245, 239, 243);
+    transition: 0.2s;
+    font-size: 18px;
+} 
+
+#listbar li a:hover{
+    color: rgb(255,0,217);
+    font-size: 20px;
+}
+
+#listbar li:hover{
+    border-bottom: 2px solid rgb(255,0,217); 
+    padding: 8px 0;
+    cursor: pointer;   
+}
+
+#badge{
+    background-color: red;
+    padding: 5px 9px;
+}
+
+#section{
+    background-color: white;   
+    margin: 20px 30px;
+}
+.section2 > h2{
+    text-align: center;
+    color: rgb(255,0,217);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: bold;
+      
+}
+
+/* styling carousel */
+
+.carousel-inner > .item > img{
+    width: 60%;
+    margin: auto;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+
+.carousel-inner > .item > img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#myCarousel{
+    margin-bottom: 10px;
+}
+#carouselControl{
+    background-image: none;
+}
+
+/* style the button (see more..) */
+#button{
+    text-align: center;
+   
+} 
+
+#seeMore{
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: rgb(39, 34, 34);
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    
+}
+  
+#seeMore span{
+    position: relative;
+    z-index: 1;
+    
+}
+  
+#seeMore::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(255,0,217);
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+  
+#seeMore:hover::before{
+    width: 300px;
+    height: 300px;
+}
+
+/* styling the third section */
+
+#second-set{
+    background-color: rgb(255,0,217);
+    /* height: 70vh; */
+}
+
+
+#section3{
+    /* height: 430px; */
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgb(88, 86, 86);    
+}
+
+
+#image-shadow{
+    /* background-color: rgb(185, 51, 74); */
+    position: relative;
+    height: 350px;
+    padding: 20px;
+    
+}
+#img1{
+    position: absolute;
+    box-shadow: -4px -4px 4px rgb(29,32,26);
+    
+   
+}
+#img2{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    box-shadow: 4px 4px 4px rgb(113,79,52);  
+}
+
+#image-text{
+    height: 350px; 
+    padding: 20px;  
+}
+
+#image-text h3{
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255,0,217);
+}
+
+#image-text p{
+    padding-top: 10px;
+}
+
+/* styling the footer  */
+.footer{
+    background-color: rgba(255,0,217,0.5);
+    font-size: 20px;
+    padding: 10px 5px;
+    color: rgb(93,47,60);
+    height: 90px;
+    
+}
+
+#footer-image >a>img{
+    margin-right: 10px;
+    /* margin-left: 10px; */
+}
+#footer-image > a >img:hover{
+    filter: brightness(0.8);
+   
+}
+
+#designed p{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 24px;
+}
+
+
+/* contact page */
+/* styling the jumbotron section */
+.contact-jumbotron{
+    background: url("https://cdn.pixabay.com/photo/2018/01/13/19/26/fashion-3080626_960_720.jpg");
+    background-size: cover;
+    height: 80vh;
+    margin-bottom: 0;
+    border-radius: 0;
+    text-align: center;
+    transition: filter 0.7s;
+    padding: 20px;  
+}
+
+.contact-jumbotron > h2{
+    padding-top: 70px;
+    padding-bottom: 5px; 
+    font-weight: bold;
+    font-size: 70px;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    -webkit-text-stroke: 1px #fff;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1200px 0;
+    /* animation: backcolor 5s linear infinite; */
+    animation: backcolor 5s linear infinite alternate;
+}
+
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+#btn{
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: rgb(255,0,217);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#btn:hover{
+    filter: brightness(0.8);   
+}
+
+#btn:focus{
+    outline: none;
+}
+
+/* styling the popup section */
+#popup{
+    width: 400px;
+    height: 220px;
+    background: url("images/bbbk\ images\ \(8\).jpeg");
+    background-size: cover;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);   
+    margin-bottom: 0;    
+}
+
+#myInquiry{
+    width: 600px;
+    padding-left: 17px;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-40%, 10%); 
+    transition: ease-in-out 1s;
+}
+
+#popup-header{
+    padding: 0;
+    border-bottom: none;
+}
+
+
+#popup-body{
+    padding: 12px;
+}
+
+#myModalLabel{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(255,0,217);
+}
+
+#input-sect{
+    margin-bottom: 0;
+}
+
+#input-sect>label{
+    color: rgb(255,0,217);
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#popup-btn{
+    background-color: rgb(255,0,217);
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+#mail{
+    border: 2px solid;
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#mail::placeholder{
+    color: lightgray;
+}
+
+/* styling contact-info sections */
+#contact-section1{
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+#contact-section2{
+    background-color: rgb(255,0,217);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#contact-section2 >div > h1{
+    text-align: center; 
+    padding-bottom: 10px;
+    color: white;
+    /* font-size: 30px; */
+}
+
+/* styling the form */
+#form-grp > input{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: none;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+    margin-bottom: 20px;
+    
+}
+
+#form-grp > input::placeholder{
+    color: white;
+}
+
+
+#form-grp > input:hover{
+    box-shadow: 0 2px  white;
+}
+
+#comments{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: none;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+}
+
+
+#comments::placeholder{
+    color: white;
+}
+
+#comments:hover{
+    box-shadow: 0 2px  white;
+}
+ 
+#contact-button{
+    margin-top: 20px;
+    border-radius: none;
+    padding: 6px 40px;
+    background-color: transparent;  
+    border-color: white; 
+    transition:  0.2s;
+    color: #fff;
+    font-weight: 500;
+}
+
+#contact-button:hover{
+    background-color: white;
+    border: 2px solid white;
+    color: rgb(255,0,217);
+}
+
+/* styling the address */
+#icons{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#address-bar{
+    margin-top: 30px;
+    padding: 5px 40px;
+    font-size: 1.2em;
+}
+
+
+#address-bar >div > p{
+    margin-bottom: 20px;
+    color: white;
+} 
+
+
+
+/* media queries */
+@media (max-width: 992px) {
+    #seeMore{
+        padding: 5px 10px;
+        font-size: 15px;
+    } 
+    .section2 >h2{
+        font-size: 22px;
+    } 
+    .carousel-inner > .item > img{
+        width: 80%;
+        margin: auto;
+        filter: grayscale(100%);
+        transition: transform 0.5s;
+    }
+    #title h1{
+        font-size: 50px;
+        background-position: -300px 0;
+        animation: backcolor 4s linear infinite alternate;
+    }
+    .contact-jumbotron > h2{
+        padding-top: 50px;
+        font-size: 50px;
+        background-position: -500px 0;
+        animation: backcolor 3s linear infinite alternate;
+    }
+}
+
+
+
+
+
+
+
+
